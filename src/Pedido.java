@@ -13,7 +13,9 @@ public class Pedido {
         this.idPedido = idPedido;
         this.cliente = cliente;
     }
-
+    public int getId(){
+        return idPedido;
+    }
     public void adicionarPedidos(ItensPedido item){
         itens.add(item);
     }
