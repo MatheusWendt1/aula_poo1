@@ -8,4 +8,12 @@ public abstract class Entrega {
         System.out.println("preparando entrega do pedido #"+ pedido.getId());
     }
     public abstract void realizarEntrega();
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
 }
